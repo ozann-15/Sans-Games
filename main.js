@@ -6,7 +6,6 @@ const questions = [
   "Mie goreng atau Mie Kuah?",
   "Kegiatan indoor atau outdoor?",
   "Bisa ngilang atau bisa terbang?",
-  "Kerja sesuai passion tapi penghasilan pas-pasan atau tidak sesuai passion tapi penghasilan lebih?",
   "Nasi goreng atau nasi uduk?",
   "Lagu barat atau lagu indo?",
   "Indomaret atau Alfamart?",
