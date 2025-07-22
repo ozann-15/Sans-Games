@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer components {
+  .card-custom {
+    @apply flex flex-col items-center p-4 m-auto h-48 w-36 border-2 shadow-2xl bg-blue-100 rounded-2xl text-sm;
+  }
+}
+
 /* optional custom styles */
 body {
   font-family: "Fredoka", sans-serif;
@@ -8,6 +14,6 @@ body {
 @media (min-width: 30rem) and (max-width: 47.999rem) {
   .sm\:grid-cols-s {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
