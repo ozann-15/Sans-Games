@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This or That</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="bg-amber-100">
+    <div class="container flex justify-center items-center m-auto h-24 py-32">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-center">This or That</h1>
+    </div>
+    <div class="container w-4/5 md:w-2/3 lg:w-1/2 m-auto">
+      <div
+        class="bg-blue-100 p-4 py-12 border-4 rounded-3xl text-center font-extrabold text-4xl leading-loose shadow-2xl">
+        <h1 id="option1">Mie Goreng</h1>
+        <span class="font-medium">or</span>
+        <h1 id="option2">Mie Rebus</h1>
+      </div>
+      <button id="nextBtn" class="flex m-auto my-8 bg-blue-300 rounded-3xl font-bold text-xl">
+        <span class="p-2 px-6 cursor-pointer">Next</span>
+      </button>
+    </div>
+
+    <!-- Link to external JS file -->
+    <script src="main.js"></script>
+  </body>
+</html>

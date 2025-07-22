@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* optional custom styles */
+body {
+  font-family: "Fredoka", sans-serif;
+}
+
+@media (min-width: 30rem) and (max-width: 47.999rem) {
+  .sm\:grid-cols-s {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
