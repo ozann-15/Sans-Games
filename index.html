@@ -42,5 +42,35 @@
         <img src="./img/coming.png" alt="Coming Soon" class="w-52 rounded-2xl shadow-2xl grayscale opacity-80" />
       </a>
     </main>
+    <section class="mt-12 text-center">
+      <form id="saranForm" class="max-w-md mx-auto bg-white p-6 rounded-2xl shadow-xl space-y-4">
+        <h2 class="text-2xl font-bold text-center text-blue-500 mb-2">💡 Kirim Ide Pertanyaan</h2>
+
+        <select
+          name="kategori"
+          required
+          class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-400 focus:outline-none text-gray-700 bg-gray-50">
+          <option value="" disabled selected>Pilih kategori</option>
+          <option value="This or That">This or That</option>
+          <option value="What If">What If</option>
+          <option value="Top 3">Top 3</option>
+        </select>
+
+        <textarea
+          name="pertanyaan"
+          placeholder="Tulis ide pertanyaanmu di sini..."
+          required
+          class="w-full p-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-400 focus:outline-none text-gray-700 bg-gray-50 resize-none min-h-[120px]"></textarea>
+
+        <button
+          type="submit"
+          id="submitBtn"
+          class="w-full bg-blue-500 hover:bg-blue-600 transition-colors text-white font-semibold text-lg px-6 py-3 rounded-xl shadow-md hover:shadow-lg active:scale-95">
+          🚀 Kirim Saran
+        </button>
+      </form>
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>
