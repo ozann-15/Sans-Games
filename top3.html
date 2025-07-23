@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Top 3 Game</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y283R4D1VK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y283R4D1VK");
+    </script>
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +35,7 @@
     </a>
     <header class="mb-10 text-center">
       <h1
-        class="text-5xl md:text-6xl font-extrabold underline underline-offset-8 drop-shadow-lg text-blue-400 animate-pulse">
+        class="text-5xl md:text-6xl font-extrabold underline underline-offset-8 drop-shadow-lg text-blue-800 animate-pulse">
         👑TOP 3👑
       </h1>
       <p class="mt-4 text-xl font-semibold">Sebutkan 3 hal terbaik versi kamu!</p>
@@ -33,8 +44,8 @@
     <!-- Kartu pertanyaan -->
     <main class="w-full sm:w-4/5 md:w-2/3 lg:w-1/2">
       <div
-        class="bg-white p-8 min-h-[12rem] border-4 border-blue-300 flex flex-col items-center justify-center rounded-3xl text-center font-medium text-xl sm:text-3xl leading-relaxed shadow-2xl transition-all duration-500 ease-in-out opacity-100">
-        <h1 id="title" class="font-bold py-4">Sebutkan Top 3 !</h1>
+        class="bg-white p-2 min-h-[12rem] border-4 border-blue-300 flex flex-col rounded-3xl text-center font-medium text-responsive-xl leading-relaxed shadow-2xl transition-all duration-500 ease-in-out opacity-100">
+        <h1 id="title" class="font-bold py-4 mb-2">Sebutkan Top 3 !</h1>
         <h1 id="option1"></h1>
       </div>
 
@@ -47,6 +58,6 @@
     </main>
 
     <!-- Script -->
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

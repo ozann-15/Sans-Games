@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This or That</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y283R4D1VK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y283R4D1VK");
+    </script>
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +37,7 @@
     </a>
     <header class="mb-10 text-center">
       <h1
-        class="text-5xl md:text-6xl font-extrabold underline underline-offset-8 drop-shadow-lg text-blue-400 animate-pulse">
+        class="text-5xl md:text-6xl font-extrabold underline underline-offset-8 drop-shadow-lg text-blue-800 animate-pulse">
         This or That
       </h1>
       <p class="mt-4 text-xl font-semibold">Pilih salah satu yang kamu suka!</p>
@@ -50,6 +61,6 @@
     </main>
 
     <!-- Script -->
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>

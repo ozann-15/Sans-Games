@@ -4,6 +4,17 @@
   .card-custom {
     @apply flex flex-col items-center p-4 m-auto h-48 w-36 border-2 shadow-2xl bg-blue-100 rounded-2xl text-sm;
   }
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl lg:text-3xl;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl lg:text-2xl;
+  }
+
+  .text-responsive-xs {
+    @apply text-xs sm:text-sm lg:text-base;
+  }
 }
 
 /* optional custom styles */

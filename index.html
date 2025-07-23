@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SansGames</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y283R4D1VK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-Y283R4D1VK");
+    </script>
     <link href="./output.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,18 +41,20 @@
     <!-- Game Cards -->
     <main class="flex flex-wrap justify-center gap-6 px-4">
       <a href="tot.html" class="transform transition-transform duration-500 hover:scale-105">
-        <img src="./img/That.png" alt="This or That" class="w-52 rounded-2xl shadow-2xl p-2" />
+        <img src="./img/That.png" alt="This or That" class="w-64 rounded-2xl shadow-2xl p-2" />
       </a>
       <a href="whatif.html" class="transform transition-transform duration-500 hover:scale-105">
-        <img src="./img/whatif.png" alt="What if?" class="w-52 rounded-2xl shadow-2xl" />
+        <img src="./img/whatif.png" alt="What if?" class="w-64 rounded-2xl shadow-2xl" />
       </a>
       <a href="top3.html" class="transform transition-transform duration-500 hover:scale-105">
-        <img src="./img/top3.png" alt="Top 3" class="w-52 rounded-2xl shadow-2xl" />
+        <img src="./img/top3.png" alt="Top 3" class="w-64 rounded-2xl shadow-2xl" />
       </a>
-      <a href="#" class="transform transition-transform duration-500 hover:scale-105">
-        <img src="./img/coming.png" alt="Coming Soon" class="w-52 rounded-2xl shadow-2xl grayscale opacity-80" />
+      <a href="dtp.html" class="transform transition-transform duration-500 hover:scale-105">
+        <img src="./img/coming.png" alt="Coming Soon" class="w-64 rounded-2xl shadow-2xl grayscale opacity-80" />
       </a>
     </main>
+
+    <!-- ============ FORM =================== -->
     <section class="mt-12 text-center">
       <form id="saranForm" class="max-w-md mx-auto bg-white p-6 rounded-2xl shadow-xl space-y-4">
         <h2 class="text-2xl font-bold text-center text-blue-500 mb-2">💡 Kirim Ide Pertanyaan</h2>
@@ -49,11 +62,12 @@
         <select
           name="kategori"
           required
-          class="w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-400 focus:outline-none text-gray-700 bg-gray-50">
-          <option value="" disabled selected>Pilih kategori</option>
-          <option value="This or That">This or That</option>
-          <option value="What If">What If</option>
-          <option value="Top 3">Top 3</option>
+          class="inline-block max-w-xs w-full p-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-green-400 focus:outline-none text-gray-700 bg-gray-50">
+          <option value="" disabled selected class="w-32">Pilih kategori</option>
+          <option value="This or That" class="w-32">This or That</option>
+          <option value="What If" class="w-32">What If</option>
+          <option value="Top 3" class="w-32">Top 3</option>
+          <option value="Deeptalk Pasangan" class="w-32">Deeptalk Pasangan</option>
         </select>
 
         <textarea
@@ -71,6 +85,6 @@
       </form>
     </section>
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
