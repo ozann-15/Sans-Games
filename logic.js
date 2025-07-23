@@ -1,5 +1,13 @@
 // logic.js
-import { totQuestions, dtpQuestions, whatIfQuestions, top3Questions, dttQuestions } from "./questions.js";
+import {
+  totQuestions,
+  totQuestions2,
+  totQuestions3,
+  dtpQuestions,
+  whatIfQuestions,
+  top3Questions,
+  dttQuestions,
+} from "./questions.js";
 
 function getRandomIndex(length, lastIndexRef) {
   let newIndex;
@@ -20,6 +28,42 @@ export function initThisOrThat() {
   function displayQuestion() {
     const index = getRandomIndex(totQuestions.length, lastIndex);
     const [first, second] = totQuestions[index].split(" atau ");
+    option1.textContent = first || "";
+    option2.textContent = (second || "").replace("?", "");
+  }
+
+  nextBtn.addEventListener("click", displayQuestion);
+  displayQuestion();
+}
+
+export function initThisOrThat2() {
+  const option1 = document.getElementById("option1tot2");
+  const option2 = document.getElementById("option2tot2");
+  const nextBtn = document.getElementById("nextBtn");
+
+  const lastIndex = { value: -1 };
+
+  function displayQuestion() {
+    const index = getRandomIndex(totQuestions2.length, lastIndex);
+    const [first, second] = totQuestions2[index].split(" atau ");
+    option1.textContent = first || "";
+    option2.textContent = (second || "").replace("?", "");
+  }
+
+  nextBtn.addEventListener("click", displayQuestion);
+  displayQuestion();
+}
+
+export function initThisOrThat3() {
+  const option1 = document.getElementById("option1tot3");
+  const option2 = document.getElementById("option2tot3");
+  const nextBtn = document.getElementById("nextBtn");
+
+  const lastIndex = { value: -1 };
+
+  function displayQuestion() {
+    const index = getRandomIndex(totQuestions3.length, lastIndex);
+    const [first, second] = totQuestions3[index].split(" atau ");
     option1.textContent = first || "";
     option2.textContent = (second || "").replace("?", "");
   }
