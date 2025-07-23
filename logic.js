@@ -1,5 +1,5 @@
 // logic.js
-import { totQuestions, dtpQuestions, whatIfQuestions, top3Questions } from "./questions.js";
+import { totQuestions, dtpQuestions, whatIfQuestions, top3Questions, dttQuestions } from "./questions.js";
 
 function getRandomIndex(length, lastIndexRef) {
   let newIndex;
@@ -52,6 +52,21 @@ export function initDtpQuestion() {
   function displayQuestion() {
     const index = getRandomIndex(dtpQuestions.length, lastIndex);
     question.textContent = dtpQuestions[index];
+  }
+
+  nextBtn.addEventListener("click", displayQuestion);
+  displayQuestion();
+}
+
+export function initDttQuestion() {
+  const question = document.getElementById("dttQuestion");
+  const nextBtn = document.getElementById("nextBtn");
+
+  const lastIndex = { value: -1 };
+
+  function displayQuestion() {
+    const index = getRandomIndex(dttQuestions.length, lastIndex);
+    question.textContent = dttQuestions[index];
   }
 
   nextBtn.addEventListener("click", displayQuestion);
