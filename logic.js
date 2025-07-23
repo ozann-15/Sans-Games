@@ -8,6 +8,8 @@ import {
   top3Questions,
   dttQuestions,
   setujuQuestions,
+  hesQuestions,
+  shesQuestions,
 } from "./questions.js";
 
 function getRandomIndex(length, lastIndexRef) {
@@ -142,6 +144,36 @@ export function initSetujuQuestion() {
   function displayQuestion() {
     const index = getRandomIndex(setujuQuestions.length, lastIndex);
     question.textContent = setujuQuestions[index];
+  }
+
+  nextBtn.addEventListener("click", displayQuestion);
+  displayQuestion();
+}
+
+export function initHesQuestion() {
+  const question = document.getElementById("hesQuestion");
+  const nextBtn = document.getElementById("nextBtn");
+
+  const lastIndex = { value: -1 };
+
+  function displayQuestion() {
+    const index = getRandomIndex(hesQuestions.length, lastIndex);
+    question.textContent = hesQuestions[index];
+  }
+
+  nextBtn.addEventListener("click", displayQuestion);
+  displayQuestion();
+}
+
+export function initShesQuestion() {
+  const question = document.getElementById("shesQuestion");
+  const nextBtn = document.getElementById("nextBtn");
+
+  const lastIndex = { value: -1 };
+
+  function displayQuestion() {
+    const index = getRandomIndex(shesQuestions.length, lastIndex);
+    question.textContent = shesQuestions[index];
   }
 
   nextBtn.addEventListener("click", displayQuestion);

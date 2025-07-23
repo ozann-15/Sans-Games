@@ -8,6 +8,8 @@ import {
   initTop3,
   initDttQuestion,
   initSetujuQuestion,
+  initHesQuestion,
+  initShesQuestion,
 } from "./logic.js";
 
 import { initFormHandler } from "./form.js"; // ✅ tambahkan ini
@@ -29,6 +31,10 @@ window.addEventListener("DOMContentLoaded", () => {
     initDttQuestion();
   } else if (document.getElementById("setujuQuestion")) {
     initSetujuQuestion();
+  } else if (document.getElementById("hesQuestion")) {
+    initHesQuestion();
+  } else if (document.getElementById("shesQuestion")) {
+    initShesQuestion();
   }
   // ✅ Panggil handler form jika form ditemukan
   if (document.getElementById("saranForm")) {
