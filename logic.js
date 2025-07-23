@@ -7,6 +7,7 @@ import {
   whatIfQuestions,
   top3Questions,
   dttQuestions,
+  setujuQuestions,
 } from "./questions.js";
 
 function getRandomIndex(length, lastIndexRef) {
@@ -72,6 +73,21 @@ export function initThisOrThat3() {
   displayQuestion();
 }
 
+export function initTop3() {
+  const question = document.getElementById("option1");
+  const nextBtn = document.getElementById("nextBtn");
+
+  const lastIndex = { value: -1 };
+
+  function displayQuestion() {
+    const index = getRandomIndex(top3Questions.length, lastIndex);
+    question.textContent = top3Questions[index];
+  }
+
+  nextBtn.addEventListener("click", displayQuestion);
+  displayQuestion();
+}
+
 export function initWhatIf() {
   const question = document.getElementById("question");
   const nextBtn = document.getElementById("nextBtn");
@@ -117,15 +133,15 @@ export function initDttQuestion() {
   displayQuestion();
 }
 
-export function initTop3() {
-  const question = document.getElementById("option1");
+export function initSetujuQuestion() {
+  const question = document.getElementById("setujuQuestion");
   const nextBtn = document.getElementById("nextBtn");
 
   const lastIndex = { value: -1 };
 
   function displayQuestion() {
-    const index = getRandomIndex(top3Questions.length, lastIndex);
-    question.textContent = top3Questions[index];
+    const index = getRandomIndex(setujuQuestions.length, lastIndex);
+    question.textContent = setujuQuestions[index];
   }
 
   nextBtn.addEventListener("click", displayQuestion);
